@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCUw75BssU1zVryg56kFrWg706i2sQKTJA",
+    authDomain: "autentificacionvr.firebaseapp.com",
+    databaseURL: "https://autentificacionvr.firebaseio.com",
+    projectId: "autentificacionvr",
+    storageBucket: "autentificacionvr.appspot.com",
+    messagingSenderId: "726924771640",
+    appId: "1:726924771640:web:ac9db33a600a02a45041cd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   </head>
   <body>
     <noscript>
